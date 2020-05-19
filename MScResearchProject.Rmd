@@ -1,0 +1,80 @@
+---
+title: "MSc Research Project"
+author: "Eleanor Hyde"
+date: "19/05/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(bootstrap) #load bootstrap, this is meant to change theme but not working
+library(tidyverse) #load tidyverse
+library(ggplot2) #load plotting tools
+library (cowplot) #advanced plotting options
+```
+
+## Action video gamers' task switching and processing speed abilities: a mixed method investigation.
+Conducted by Eleanor Hyde at the University of Sheffield.  
+Supervised by Dr. Claudia von Bastain.
+
+```{r out.width = "40%", fig.align = "center", echo=FALSE}
+#Load and Display the CS:GO logo
+img1_path <- "images/CS GO LOGO.png"
+knitr::include_graphics(img1_path)
+```
+
+## Background
+Action video games, and especially the sub-genre First Person Shooter (FPS) games, contribute 47.8% of total video game sales (Entertainment Software Association, 2019). Recently, researchers have explored whether playing action video games can have a positive impact on several cognitive domains such as executive function.  
+
+Executive functions are an umbrella term for cognitive processes which enable people to regulate their thoughts and actions during goal directed behaviour (Friedman & Miyake, 2012). Evidence from prior studies suggests that FPS gamers perform better in tasks measuring executive functions, particularly in their ability to shift attentional focus from one task to another, known as task switching (Green, Sugarman, Medford, Klobusicky & Bavelier, 2012). However, it is yet unclear to what extent these differences are due to better executive processing or are due to faster processing speed abilities (van Ravenzwaaij, Boekel, Forstmann, Ratcliff & Wagenmakers, 2014).   
+
+## Aims
+The aim of this study is to further explore the cognitive abilities of FPS players by examining task-switching and processing speed abilities in individuals who play the FPS game Counter-Strike: Global Offensive (CS: GO). Previous research has compared individuals with no video game experience to those who have played various games for a minimal amount of time (e.g. 1 hour per day over the past 6 months; Green & Bavelier, 2003). However, different games and different levels of expertise in video gaming may be associated differently with cognitive abilities.   
+
+Therefore, we aim to use a large sample of casual, experienced, and professional CS: GO gamers, to evaluate task switching and processing speed abilities in this group of highly trained individuals. Some of these gamers will likely have hours well exceeding the expertise level of gamers in previous studies. Furthermore, the qualitative interview data collected from casual, expert, and professional gamers is novel to the field of research; it will add to the wider researcher knowledge of gaming expertise improving future study.   
+
+## Methods
+### Semi-Structured Interview (30-60 mins)
+The aim of the interview is to explore participants’ personal views and experiences with CS: GO and to optimize the design and phrasing of questions in the game-specific expertise questionnaire in the later experiment. Participants will be invited to a Google Meet interview at their convenience. Before the interview data, they will be provided with the participant information sheet and consent form, [available here](https://github.com/EleanorHyde/MScResearchProject) and a short [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSeJ0b6ZEcxKRVd2aKEAYZwK4KuqmbMziJ7jCNVFKMgk_HEaIA/viewform?), to gather demographic and computer specification information (e.g. Graphics Card and Processor) via email before the interview. The latter information is gathered as a potential proxy for expertise, with more expert players possibly using technologies with higher specifications.
+The topics covered in the interview will include player statistics, playstyle, their views on how to define gaming expertise, and the roles of tournaments, performance aids, required skills and professional gaming. The specific layout of the semi-structured interview is [available here](https://github.com/EleanorHyde/MScResearchProject).  
+
+### Experiment (30 mins)
+Participants will be provided with a link to the Qualtrics Survey, the first section of which provides participants with the information sheet and consent form, [available here](https://github.com/EleanorHyde/MScResearchProject). Following completion of this section, the Qualtrics Survey will link participants to the [Tatool Web Task](http://www.tatool-web.com/#/public/41fd74e7-45b9-4cde-a5b8-f1822c623d02) , which will measure processing speed and task switching abilities. This task has been extensively used in previous research, including in research conducted by the supervisor (e.g., von Bastian et al., 2016). Once completed, the final slide of the task will show participants their unique completion code, which they will copy-paste into the Qualtrics Survey. Afterward, a short questionnaire will continue on Qualtrics. 
+The items on this questionnaire will be guided and influenced by the initial semi-structured interview questions and will likely have many similar questions but in a shorter and closed-answer format. The main focus of this questionnaire is to gather demographics, information regarding the player’s individual CS: GO expertise level and experience playing action video games.   
+
+```{r methodimages, fig.show='hold',out.width="45%",, echo=FALSE}
+#load and display Google Meet and Qualtrics logos using 'cowplot'
+img2_path <- "Google Meet.jpg" 
+img3_path <- "Qualtrics.jpg"
+ggdraw() + draw_image("images/GoogleMeet.jpg")
+ggdraw() + draw_image("images/Qualtrics.jpg")
+```
+
+## Participants
+We aim to recruit 3 participants for the interview, consisting of self-identifying casual, expert or professional CS:GO players. For the experiment, we aim to recruit a larger sample of 300 participants who will be CS:GO players of any experience.
+
+Interview participants have been selected via the researcher’s personal contacts and word-of-mouth. The wider sample of participants will be recruited using a range of methods to ensure a large reach including opportunity and ‘snowball’ sampling. The main methods of recruitment will be via social media, posts on community boards (e.g. Steam) and email.
+
+### Criteria
+We aim for the participants to represent our target population of CS:GO players. All participants must meet the following inclusion criteria:  
+ - 16-35 years old  
+ - Proficient English for understanding the instructions and questions  
+ - Play CS:GO, with any frequency or experience  
+ - Have access to a computer with internet connection  
+
+Additionally, those participating in the interview will need to have a computer with access to Google Meet, a webcam and a microphone.
+
+### Payment and Risks
+As outlined above, a large sample of at least *N* = 300 is required to conduct the relevant analyses. We will compensate the first 300 participants with £4 Amazon vouchers upon completion following verification of the completion through unique experiment tokens provided by the experiment software. In addition, all
+participants (including any completing the study after the first 300 participants) will enter a prize draw for 1x £100, 1x £50, and 5x £10 prizes. Furthermore, the 3 individuals who participate in the interview will be compensated with a £7
+Amazon voucher. This compensation scheme and the spending have been approved by the Department of Psychology.
+
+The study is not expected to cause physical or psychological harm or distress to participants greater than that experienced in daily life, or from a similar discussion with friends.
+
+## Further Information
+If you have any questions or require further information, please contact:  
+Eleanor Hyde at erahyde1@sheffield.ac.uk  
+
+The repo including the rmarkdown file, information sheets, consent forms, debreif sheets and interview questions, are available online via github: https://github.com/EleanorHyde/MScResearchProject
+
+This page was generated using R Script
